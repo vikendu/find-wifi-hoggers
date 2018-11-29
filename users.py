@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import subprocess
 import ipaddress
 from subprocess import Popen, PIPE
