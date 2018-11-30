@@ -67,7 +67,7 @@ for i in network.hosts():
 
 			except KeyError:
 				print('Buy a proper device with a proper NIC!!!')
-				#Sample of a unregistered crappy MAC: 04:52:02:33:02:2e
+				#Sample of a unregistered crappy MAC: 04:52:02:xx:xx:xx
 
 	
 	elif(i == '192.168.1.20'):
