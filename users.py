@@ -11,7 +11,9 @@ import codecs
 
 url = 'http://macvendors.co/api/'
 network = ipaddress.ip_network('192.168.1.0/24')
-print('Checking first 20 IPs in your Subnet\n')
+print('©2018 Vikendu Singh')
+print('Version 1.7_rc9\nFeel free to share with others\n')
+print('Checking first 20 IPs in your Subnet...  255.255.255.0 ... \n')
 for i in network.hosts():
 	i = str(i)
 	toping = Popen(['ping', '-c','3',i], stdout = PIPE)
