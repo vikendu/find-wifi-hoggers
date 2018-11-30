@@ -61,8 +61,13 @@ for i in network.hosts():
 			response = urllib2.urlopen(request)
 			reader = codecs.getreader("utf-8")
 			obj = json.load(reader(response))
+			
+			try:
+				print (obj['result']['company']+"\n\n");
 
-			print (obj['result']['company']+"\n\n");
+			except KeyError:
+				print('Buy a proper device with a proper NIC!!!')
+				#Sample of a unregistered crappy MAC: 04:52:02:33:02:2e
 
 	
 	elif(i == '192.168.1.20'):
